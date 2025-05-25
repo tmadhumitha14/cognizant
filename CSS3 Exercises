@@ -1,0 +1,230 @@
+1. Styling Methods (Inline, Internal, External)
+
+index.html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Community Portal</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      background-color: #f0f8ff;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="color: red;">Local Community Event</h1>
+  <h2 id="mainHeader">Upcoming Events</h2>
+  <div class="eventCard">Sample Event Card</div>
+</body>
+</html>
+styles.css
+/* Header styles */
+#mainHeader {
+  font-size: 28px;
+  color: #333;
+}
+
+/* Event card styles */
+.eventCard {
+  background-color: #e6f7ff;
+  padding: 15px;
+  margin: 10px;
+  border: 1px solid #ccc;
+}
+
+
+2. CSS Syntax and Comments
+
+/* Style for main CTA button */
+.cta-button {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+
+3. Selectors Playground
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 24px;
+  color: darkblue;
+}
+
+#mainHeader {
+  background-color: #ccc;
+  padding: 10px;
+}
+
+.eventCard {
+  border: 1px solid #444;
+  margin: 10px;
+  padding: 10px;
+}
+
+h3, p {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+4. Color & Background Styling
+
+body {
+  background: url('bg.jpg') no-repeat center center fixed;
+  background-color: #cccccc;
+  background-size: cover;
+}
+
+.header {
+  background: linear-gradient(to right, #003366, #336699);
+  color: white;
+}
+
+.text-hex {
+  color: #FF5733;
+}
+
+.text-rgba {
+  background-color: rgba(0, 128, 0, 0.3);
+}
+
+
+5. Typography: Fonts and Text
+index.html
+
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+styles.css
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.title {
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.description {
+  text-align: justify;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  line-height: 1.8;
+}
+
+
+6. Link and List Styling
+
+a:link {
+  color: #0066cc;
+}
+
+a:hover {
+  color: #ff6600;
+}
+
+a:active {
+  color: red;
+}
+
+a:visited {
+  color: purple;
+}
+
+ul.nav {
+  list-style-type: none;
+  list-style-position: inside;
+  padding-left: 0;
+}
+
+ul.nav li {
+  margin: 10px 0;
+  padding: 5px;
+}
+
+7. Table Styling
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+8.Box Model & Layout Control
+.eventCard {
+  margin: 20px;
+  padding: 15px;
+  border: 2px solid #333;
+}
+
+input:focus {
+  outline: 2px solid #007BFF;
+}
+
+/* For visibility comparison */
+.hidden {
+  visibility: hidden;
+}
+
+.none {
+  display: none;
+}
+
+9. Multiple Columns in Text
+
+.news-article {
+  column-count: 2;
+  column-gap: 30px;
+  column-rule: 1px solid gray;
+}
+
+10. Responsive Web Design with Media Queries
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    display: block;
+  }
+
+  nav ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  body {
+    font-size: 14px;
+  }
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.flex-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
